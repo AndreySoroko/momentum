@@ -15,7 +15,7 @@ function setBg(int){
   let timeOfDay = getTimeOfDay();
   let bgNum = int.toString().padStart(2, "0");
   const img = new Image();
-  img.src = `./assets/images/${timeOfDay}/${bgNum}.jpg`;
+  img.src = `https://raw.githubusercontent.com/andreysoroko/momentum-assets/assets/images/${timeOfDay}/${bgNum}.jpg`;
   img.onload = () => {
     bgImage.style.background = `url(${img.src})`;
   }
