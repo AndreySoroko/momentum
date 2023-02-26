@@ -22,7 +22,7 @@ function showDate(){
 
 function showGreeting(){
   const timeOfDay = getTimeOfDay();
-  const greetingText = `Good ${timeOfDay}`;
+  const greetingText = `Good ${timeOfDay},`;
   greeting.textContent = greetingText;
 }
 
@@ -30,12 +30,12 @@ export function getTimeOfDay() {
   const date = new Date();
   const hours = date.getHours();
   if (hours >= 0 && hours < 6) {
-    return ('night,'); // Good night / Доброй/Спокойной ночи / Дабранач
+    return ('night'); // Good night / Доброй/Спокойной ночи / Дабранач
   } else if (hours >= 6 && hours < 12) {
-    return ('morning,'); // Good morning / Доброе утро / Добрай раніцы
+    return ('morning'); // Good morning / Доброе утро / Добрай раніцы
   } else if (hours >= 12 && hours < 18) {
-    return ('afternoon,'); // Good afternoon / Добрый день / Добры дзень
-  } else return ('evening,'); // Good evening / Добрый вечер / Добры вечар
+    return ('afternoon'); // Good afternoon / Добрый день / Добры дзень
+  } else return ('evening'); // Good evening / Добрый вечер / Добры вечар
 }
 
 function setLocalStorage() {
