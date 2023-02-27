@@ -2,14 +2,11 @@ import {getTimeOfDay} from './clock-date-greeting.js';
 
 const bgImage = document.querySelector('.body');
 
-
-function getRandomInt() {
-  let min = Math.ceil(1);
-  let max = Math.floor(21);
+export function getRandomInt(min, max) {
   return Math.floor(Math.random() * (max - min)) + min;
 }
 
-let randomInt = getRandomInt();
+let randomInt = getRandomInt(1, 21);
 
 function setBg(int){
   let timeOfDay = getTimeOfDay();
