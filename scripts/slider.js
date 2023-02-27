@@ -32,7 +32,7 @@ function getSlideNext(){
     } else {
       randomInt = randomInt + 1;
     }
-    console.log("Next", randomInt);
+    // console.log("Next", randomInt);
     setBg(randomInt);
   };
 
@@ -42,7 +42,7 @@ function getSlidePrev(){
   } else {
     randomInt = randomInt - 1;
   }
-  console.log("Prev", randomInt);
+  // console.log("Prev", randomInt);
   setBg(randomInt);
 };
 
